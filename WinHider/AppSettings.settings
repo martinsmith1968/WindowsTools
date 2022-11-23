@@ -1,0 +1,40 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WinHider" GeneratedClassName="AppSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UpgradePending" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_Location" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">400, 200</Value>
+    </Setting>
+    <Setting Name="Main_Size" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">400, 200</Value>
+    </Setting>
+    <Setting Name="Config_ShowInvisibleWindows" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Config_ShowUntitledWindows" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Config_ListColumns" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;WINDOWTITLE&lt;/string&gt;
+  &lt;string&gt;PROCESSNAME&lt;/string&gt;
+  &lt;string&gt;STATE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Config_ColumnWidths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;180&lt;/string&gt;
+  &lt;string&gt;90&lt;/string&gt;
+  &lt;string&gt;90&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Config_ShowApplicationIcons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

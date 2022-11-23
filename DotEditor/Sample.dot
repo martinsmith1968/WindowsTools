@@ -1,0 +1,38 @@
+﻿digraph G {
+
+	start [label="Handle Event", style=filled, shape=doubleoctagon, fillcolor=gold];
+	end [label="End", shape=tripleoctagon, style=filled, fillcolor=gold];
+	
+	actionfirst [label="Get\nFirst Action", shape=box, color=purple];
+	actionnext [label="Get\nNext Action", shape=box, color=purple];
+	actionrecover [label="Get\nRecovery Action", shape=box, color=purple];
+	perform [label="Perform\nAction", shape=invhouse, color=blue];
+	checkresult [label="Are Results\nas expected ?", shape=diamond, color=darkgreen];
+
+	anotheraction [label="Is there\nanother Action ?", shape=diamond, color=darkgreen];
+	recoveryaction [label="Is there a\nrecovery Action ?", shape=diamond, color=darkgreen];
+
+	actionsuccess [label="Report\nSuccess", shape=invhouse, color=blue, fontcolor=darkgreen];
+	actionfailed [label="Report\nFailure", shape=invhouse, color=blue, fontcolor=red];
+	
+	start [];
+
+	start -> actionfirst;
+	actionfirst -> perform;
+	perform -> checkresult;
+	checkresult -> recoveryaction [label="No"];
+	checkresult -> anotheraction [label="Yes"];
+	recoveryaction -> actionrecover [label="Yes"];
+	recoveryaction -> actionfailed [label="No"];
+	anotheraction -> actionsuccess [label="No"];
+	anotheraction -> actionnext [label="Yes"];
+	actionsuccess -> end [label="Success", fontcolor=darkgreen];
+	actionfailed -> end [label="Failure", fontcolor=red];
+	actionnext -> perform;
+	actionrecover -> perform;
+
+	
+	{ rank=same; perform actionnext actionrecover}
+	{ rank=same; actionsuccess actionfailed }
+#	{ rank=same; checkresult recoveryaction }
+}

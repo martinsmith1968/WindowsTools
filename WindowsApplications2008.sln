@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickCalendar", "QuickCalendar\QuickCalendar.csproj", "{5532895A-A053-4DF9-A841-4F2CF038C50C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRA.WinControls", "NRA.WinControls\NRA.WinControls.csproj", "{136B5495-FBEF-4802-A6D3-A8E703AE7071}"
@@ -100,5 +102,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27BBB1AE-47FE-42ED-9AB7-00D9A9C55995}
 	EndGlobalSection
 EndGlobal
